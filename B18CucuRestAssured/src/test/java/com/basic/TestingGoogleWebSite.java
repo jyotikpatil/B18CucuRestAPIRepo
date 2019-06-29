@@ -24,6 +24,6 @@ public class TestingGoogleWebSite {
 		Response res = RestAssured.given().get("https://www.google.com/");
 		int statCode = res.statusCode();
 		System.out.println("status code is "+statCode);
-		Assert.assertEquals(200, statCode);
+		Assert.assertEquals(200, statCode);  
 	}
 }
