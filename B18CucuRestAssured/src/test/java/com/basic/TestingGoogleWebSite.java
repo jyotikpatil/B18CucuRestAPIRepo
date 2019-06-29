@@ -2,7 +2,7 @@ package com.basic;
 
 
 import org.junit.Assert;
-import org.testng.annotations.Test;
+
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
@@ -19,7 +19,7 @@ public class TestingGoogleWebSite {
 //		
 //	}
 	
-	@Test
+	
 	public void testGoogle(){
 		Response res = RestAssured.given().get("https://www.google.com/");
 		int statCode = res.statusCode();
